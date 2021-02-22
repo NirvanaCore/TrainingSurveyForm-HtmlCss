@@ -1,4 +1,4 @@
-view on :
+view on : https://nirvanacore.github.io/TrainingSurveyForm-HtmlCss/
 
 Training Survey Form
 
