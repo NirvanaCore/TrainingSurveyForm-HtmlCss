@@ -1,0 +1,156 @@
+<html>
+
+<head>
+  <title> Training Survey Form </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <h1 id="title" class="text-title"> Training Survey Form </h1>
+  <p id="description" class="text-description"> Thank you for taking the time to help us improve the platform </p>
+</header>
+
+<div class="container">   
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="Full Name"> Full Name </label>
+      <input type="text-label" name="name" id="name" class="form-control" placeholder=" Enter your name " required />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email"> Email </label>
+      <input type="email" name="email" id="email" class="form-control" placeholder=" Enter your email " required />
+    </div>
+
+    <div class="form-group">
+      <label id="number" for="number"> Age <span class="clue">(optional)</span> </label>
+      <input type="number" name="age" id="number" class="form-control" placeholder=" Enter your age " />
+    </div>
+
+    <div class="form-group">
+      <p> Which option best describe your current role ?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value> Select your current role</option>
+        <option value="student"> Student </option>
+        <option value="job1"> Full Time Job</option>
+        <option value="job2"> Part time Job </option>
+        <option value="other"> Other </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p> What is your favorite language to work ? </p>
+      <select id="most-like" name="mostlike" class="form-control" required>
+        <option disabled selected value>Select programming Language</option>
+        <option value="c"> C </option>
+        <option value="c++"> C++ </option>
+        <option value="java"> Java</option>
+        <option value="PHP"> PHP</option>
+        <option value="Python"> Python</option>
+        <option value="javascript"> JavaScript</option>
+        <option value="c#"> c#</option>
+        <option value="R"> R </option>
+        <option value="swift"> Swift </option>
+      </select>
+    </div>
+
+    <div class="form-group" id="box">
+      <p> Which training projects do you have completed ?<span class="clue">(Check all that apply)</span></p>
+      <label>
+        <input name="project" value="frontend-developer" type="checkbox" class="input-checkbox"> Frontend Developer
+        </input>
+      </label>
+      <label>
+        <input name="project" value="backend-developer" type="checkbox" class="input-checkbox"> Backend Developer
+        </input>
+      </label>
+      <label>
+        <input name="project" value="wordpress-developer" type="checkbox" class="input-checkbox"> Wordpress Developer
+        </input>
+      </label>
+      <label>
+        <input name="project" value="website-developer" type="checkbox" class="input-checkbox"> Website Developer
+        </input>
+      </label>
+      <label>
+        <input name="project" value="application-developer" type="checkbox" class="input-checkbox"> Application
+        Developer </input>
+      </label>
+      <label>
+        <input name="project" value="graphic-developer" type="checkbox" class="input-checkbox"> Graphic Developer
+        </input>
+      </label>
+      <label>
+        <input name="project" value="embedded-developer" type="checkbox" class="input-checkbox"> Embedded Developer
+        </input>
+      </label>
+      <label>
+        <input name="project" value="desktop-developer" type="checkbox" class="input-checkbox"> Desktop Developer
+        </input>
+      </label>
+      <label>
+        <input name="project" value="bigdata-developer" type="checkbox" class="input-checkbox"> Bigdata Developer
+        </input>
+      </label>
+      <label>
+        <input name="project" value="security-developer" type="checkbox" class="input-checkbox"> Security Developer
+        </input>
+      </label>
+      <label>
+        <input name="project" value="game-developer" type="checkbox" class="input-checkbox"> Game Developer </input>
+      </label>
+    </div>
+
+    <div class="form-group" id="box">
+      <p> Are you satisfied from our training Program ?</p>
+      <label>
+        <input name="program" value="very-satisfied " type="radio" class="input-radio" checked></input> Very Satisfied
+      </label>
+      <label>
+        <input name="program" value="satisfied" type="radio" class="input-radio"></input> Satisfied </label>
+      <label>
+        <input name="program" value="neutral" type="radio" class="input-radio"></input> Netural </label> <label>
+        <input name="program" value="unsatisfied" type="radio" class="input-radio"></input> Unsatisfied </label><label>
+        <input name="program" value="very-unsatisfied" type="radio" class="input-radio"></input> Very Unsatisfied
+      </label>
+    </div> 
+
+      <div class="form-group" id="box">
+      <p> How did you hear about this training Program ?</p>
+      <label>
+        <input name="platform" value="social-media " type="radio" class="input-radio" checked></input> Social media
+      </label>
+      <label>
+        <input name="platform" value="Email" type="radio" class="input-radio"></input> Email </label>
+      <label>
+        <input name="platform" value="search-engine" type="radio" class="input-radio" ></input> Search Engine </label>
+      <label>
+        <input name="platform" value="friend" type="radio" class="input-radio"></input> Friend </label> <label>
+        <input name="platform" value="other" type="radio" class="input-radio"></input> other </label>
+      </div>
+        
+      <div class="form-group" id="box">
+      <p> Would you recommend us to a friend ?</p>
+      <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked></input> Definately
+      </label>
+      <label>
+        <input name="user-recommend" value="maybe" type="radio" class="input-radio"></input> Maybe </label>
+      <label>
+        <input name="user-recommend" value="not-sure" type="radio" class="input-radio"></input> Not sure </label>
+    </div>
+
+    <div class="form-group">
+        <p> Any comments or suggestion ?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder=" Enter your comment here..."></textarea>
+      </div>           
+      
+      <div class="form-group">
+        <button type="submit" id="submit" href="#" class="submit-button"> Submit </button>
+      </div>      
+
+  </form>
+</div>
+</body>
+</html>

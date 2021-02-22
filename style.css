@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #e0dddd;
+  background-image: linear-gradient(110deg,
+      rgba(36, 36, 36, 0.8),
+      rgba(14, 12, 12, 0.7)),
+    url(./image/christina-wocintechchat-com-wLiP-R6Vd2g-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header>p{
+  font-size: 12px
+}
+
+h1 {
+  font-size: 3rem;
+  padding-top: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size:10px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  box-shadow: #787978;
+}
+
+.form-group> label{
+  font-size: 1.8rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 1px;
+  padding: 5px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: inherit;
+}
+
+#box label{
+  font-size: 1rem;
+}
+
+button {
+  border-radius: 5px;
+}
+
+.container {
+  width: 100%;
+  margin: 32px auto 0 auto;
+  max-width: 1000px;
+
+}
+
+@media(max-width: 1000px) {
+  h1{
+    font-size:2.5rem;
+    font-weight: 900;
+  }
+  header>p{
+    font-size: 1rem;
+  }
+ .container> p {
+      font-size: 1.3rem;
+  }
+  label{
+    font-size: 1rem;
+  }
+  .container {
+    min-width: 600px;
+    max-width: 500px;
+  }
+}
+
+.header {
+  padding: 0 5px;
+  margin-bottom: 25px;
+}
+
+.text-description {
+  font-style: italic;
+  text-align: center;
+  font-weight: 200;
+}
+
+.clue {
+  margin-left: 2px;
+  font-size: 20px;
+  color: #787978;
+}
+
+.text-title {
+  text-align: center;
+  font-weight: 400;
+}
+
+form {
+  color: #f5f5f5;
+  background: #0e0e0e;
+  padding: 25px .5px;
+  border-radius: 8px;
+}
+
+@media(min-width: 480px) {
+  form {
+    padding: 30px;
+  }
+}
+
+.form-group {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 15px 7px;
+  color: #ffffff;
+  background-color: #0e0e0e;
+  background-clip: padding-box;
+  border: .5px solid #0e0e0e;
+  border-radius: 2px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control {
+  border-color: #000000;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 6px;
+  min-height: 15px;
+  min-width: 15px;
+}
+
+.input-textarea {
+  background-color: #ffffff;
+  min-height: 120px;
+  width: 100%;
+  padding: 6px;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  font-size: 2rem;
+  width: 100%;
+  padding: 7px;
+  background: #1e1e1f;
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-button:hover{
+  background-color: #0e0e0e;
+}
